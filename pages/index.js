@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Items from "./Items";
 import Navbar from "./NavBar/Navbar";
+import SideBarCarousel from "./SideBar&Carousel/SideBarCarousel";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       </Head>
       
       <Navbar/>
+      <SideBarCarousel/>
+      <Items/>
     </div>
   );
 }
