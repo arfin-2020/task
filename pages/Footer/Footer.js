@@ -5,36 +5,40 @@ import styles from './Footer.module.css';
 import FooterCol from './FooterCol';
 
 const Footer = () => {
-    const noNamed = [
-        { name: "Emergency Dental Care", link: "/emergency" },
-        { name: "Check Up", link: "/checkup" },
-        { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
-        { name: "Tooth Extraction", link: "/tooth-extract" },
-        { name: "Check Up", link: "/checkup" },
-    ]
+    
     const ourAddress = [
-        { name: "New York - 101010 Hudson", link: "//google.com/map" },
-        { name: "Yards", link: "//google.com/map" },
+        { name: "🌐 New York - 101010 Hudson" },
+       
+        { name: "📧 Stroyka@gmail.com"},
+        { name: "☎️ +8801542455"},
+        { name: "🕞 Mon-Sat 10:00pm - 7:00"},
 
     ]
-    const oralHealth = [
-        { name: "Emergency Dental Care", link: "/emergency" },
-        { name: "Check Up", link: "/checkup" },
-        { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
-        { name: "Tooth Extraction", link: "/tooth-extract" },
-        { name: "Check Up", link: "/checkup" },
-        { name: "Check Up", link: "/checkup" },
-        { name: "Check Up", link: "/checkup" }
+    const information = [
+        { name: "About US"},
+        { name: "Delivery Information"},
+        { name: "Privacy Policy"},
+        { name: "Brands"},
+        { name: "Site Map"},
     ]
-    // "footer-area clear-both"
+    const myAccount = [
+        { name: "Store Location"},
+        { name: "Older History" },
+        { name: "Wish List"},
+        { name: "News letter"},
+        { name: "Specials"},
+        { name: "Gift"},
+        
+    ]
+    
     return (
         <footer className={styles.footerArea}>
             <div className="container pt-5">
                 <div className="row py-5">
-                    <FooterCol key={1} menuTitle={"Contact Us"} menuItems={noNamed} />
-                    <FooterCol key={3} menuTitle="Oral Health" menuItems={oralHealth} />
-                    <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}>
-                        {/* socialMedia listInline */}
+                    <FooterCol key={1} menuTitle={"Contact Us"} menuItems={ourAddress} />
+                    <FooterCol key={3} menuTitle="Information" menuItems={information} />
+                    <FooterCol key={4} menuTitle="My Account" menuItems={myAccount}>
+                        
                         <ul className={styles.socialMedia}>
                             <li className="list-inline-item"><a href="//facebook.com"><FontAwesomeIcon className={styles.activeIcon} icon={faFacebookF} /></a></li>
                             <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className="icon" icon={faGooglePlusG} /></a></li>

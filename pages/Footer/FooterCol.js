@@ -6,7 +6,7 @@ const FooterCol = (props) =>{
         <h6 className="text-black">{props.menuTitle ? props.menuTitle : " "}</h6>
         <ul className="list-unstyled mt-4">
              {
-                 props.menuItems.map((item, index) => <li key={index}><p to={item.link} className="text-black">{item.name}</p></li>)
+                 props.menuItems.map((item, index) => <li key={index}><p className="text-black">{item.name}</p></li>)
              }
         </ul>
         {props.children && props.children}
