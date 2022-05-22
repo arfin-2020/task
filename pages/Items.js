@@ -1,8 +1,8 @@
 import react from 'react';
 import CardItems from './CardItems';
-import { experimentalStyled as styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import CardActions from '@mui/material/CardActions';
 import Grid from '@mui/material/Grid';
 
 const Items = () =>{
@@ -52,13 +52,7 @@ const Items = () =>{
         },
     ]
 
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-        ...theme.typography.body2,
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      }));
+  
 
     return(
         <Box sx={{ flexGrow: 1, marginTop: '30px' , marginLeft:'60px'}}>
@@ -69,6 +63,9 @@ const Items = () =>{
             </Grid>
           ))}
         </Grid>
+        <CardActions className="justify-content-center">
+                <Button style={{color: 'black', backgroundColor:'rgb(240, 202, 34)', fontWeight:'bold'}}>Load More</Button>
+        </CardActions>
       </Box>
     )
 }
