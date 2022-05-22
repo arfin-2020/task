@@ -39,10 +39,10 @@ const Footer = () => {
                     <FooterCol key={3} menuTitle="Information" menuItems={information} />
                     <FooterCol key={4} menuTitle="My Account" menuItems={myAccount}>
                         
-                        <ul className={styles.socialMedia}>
-                            <li className="list-inline-item"><a href="//facebook.com"><FontAwesomeIcon className={styles.activeIcon} icon={faFacebookF} /></a></li>
-                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className="icon" icon={faGooglePlusG} /></a></li>
-                            <li className="list-inline-item"><a href="//instagram.com"><FontAwesomeIcon className="icon" icon={faInstagram} /></a></li>
+                        <ul>
+                            <li className="list-inline-item"><a href="//facebook.com"><FontAwesomeIcon className={styles.socialMedia} icon={faFacebookF} /></a></li>
+                            <li className="list-inline-item"><a href="//google.com"><FontAwesomeIcon className={styles.socialMedia} icon={faGooglePlusG} /></a></li>
+                            <li className="list-inline-item"><a href="//instagram.com"><FontAwesomeIcon className={styles.socialMedia} icon={faInstagram} /></a></li>
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
